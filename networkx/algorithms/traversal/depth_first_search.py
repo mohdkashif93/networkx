@@ -423,7 +423,8 @@ def dfs_labeled_edges(G, source=None, depth_limit=None):
 
 def iterative_deepening_dfs(G, source, target, depth_limit=None):
     """Iterate over Graph using Iterative deepening depth-first-search (IDDFS) to
-     find if a path exists from source to target or not.
+     find if a path exists from source to target or not. It combines the
+     space optimization of DFS with the time optimality of BFS.
 
        Parameters
        ----------
